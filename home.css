@@ -1,0 +1,50 @@
+body{
+    font-family:         Helvetica, Arial, sans-serif;
+    height:              100%;
+    margin:              0;
+}
+
+#header{
+    position:            absolute;
+    width:               100%;
+    background-color:    beige;
+    display:             flex;
+    align-items:         center;
+    justify-content:     space-between;
+}
+
+#header .title{
+    text-transform:      uppercase;
+    text-align:          center;
+    font-size:           1.5em;
+    color:               #ccc;
+    display:             table;
+}
+
+#header .title div{
+    display:             table-cell;
+    vertical-align:      middle;
+}
+
+#header .icon{
+    padding:             20px;
+}
+
+#header .icon object{
+    width:               50px;
+    height:              50px;
+    display:             block;
+}
+
+#splash{
+    height:              100vh;
+    margin:              0;
+    display:             block;
+    background-image:    url(images/lovere.jpg);
+    background-size:     cover;
+    background-position: center;
+}
+
+#main{
+    margin:              0 auto;
+}
