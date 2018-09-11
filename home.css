@@ -2,11 +2,14 @@ body{
     font-family:    Helvetica, Arial, sans-serif;
     height:         100%;
     margin:         0;
-    color:          #ccc;
+    color:          #888;
 }
 
 h1, h2{
     text-align:     center;
+}
+
+h1, h2, h3{
     text-transform: uppercase;
     font-weight:    normal;
 }
@@ -55,6 +58,7 @@ h1{
 
 .section{
     margin:           0 auto;
+    margin-bottom:    50px;
     padding:          0 20px;
     max-width:        1280px;
 }
@@ -64,29 +68,26 @@ h2{
     padding:          .83em;
 }
 
-.hl{
+.flexs{
     display:          flex;
     flex-wrap:        wrap;
     justify-content:  space-around;
 }
+
 .hl > div{
     flex: 0 1 360px;
     margin-bottom:    20px;
 }
 
-.hl > div h3{
-    text-transform:   uppercase;
-}
-
 .poster{
-    background-color: #333;
+    background-color: #f0f0f0;
     padding-bottom:   1em;
     font-size:        14pt;
 }
 
-:nth-child(2n+1) > .poster{
-    background-color: #f0f0f0;
-    color:            #888;
+:nth-child(2n) > .poster{
+    background-color: #333;
+    color:            #ccc;
 }
 
 .poster img{
@@ -97,4 +98,107 @@ h2{
 
 .poster p{
     margin:           .4em 20px;
+}
+
+/* BANNER*/
+
+.banner{
+    background-color: #f0f0f0;
+    padding:          0 20px;
+}
+
+.bf{
+    max-width:        1440px;
+    margin:           0 auto;
+}
+
+.bf > div{
+    flex:             1 600px;
+    margin:           40px;
+    max-width:        800px;
+}
+
+.banner h3{
+    text-align:       center;
+}
+
+.red{
+    color:            #60252c;
+}
+
+.col{
+    columns:          2 250px;
+}
+
+.wide{
+    letter-spacing:   .4em;
+}
+
+ul{
+    padding-left:     0;
+    margin-top:       0;
+    list-style:       inside;
+}
+
+li.sec{
+    list-style-type:  circle;
+}
+
+form input, form select{
+    height:           40px;
+    border:           none;
+    color:            inherit;
+    margin:           10px 0;
+    font-size:        1.4em;
+}
+
+form .time{
+    display:          flex;
+    justify-content:  space-between;    
+}
+
+form .time input{
+    text-align:       center;
+    flex:             0 1 250px;
+}
+
+form .time input:not(:last-child){
+    margin-right:     40px;
+}
+
+form select{
+    width:            100%;
+}
+
+form input[type=submit]{
+    background-color: #60252c;
+    display:          block;
+    margin:           10px auto;
+    color:            #ccc;
+    width:            100%;
+    text-transform:   uppercase;
+    max-width:        400px;
+}
+
+/* EVENTS */
+
+.ev > div{
+    background-color: #f0f0f0;
+}
+
+.button{
+    margin:           0 auto;
+    border:           2px solid #333;
+    border-radius:    15px;
+    display:          table;
+}
+
+.button > h3{
+    padding:          0 1.5em;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: #333;
 }
