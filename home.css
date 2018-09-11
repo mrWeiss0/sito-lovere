@@ -1,40 +1,46 @@
 body{
-    font-family:         Helvetica, Arial, sans-serif;
-    height:              100%;
-    margin:              0;
+    font-family:    Helvetica, Arial, sans-serif;
+    height:         100%;
+    margin:         0;
+    color:          #ccc;
 }
 
+h1, h2{
+    text-align:     center;
+    text-transform: uppercase;
+    font-weight:    normal;
+}
+
+/* HEADER */
+
 #header{
-    position:            absolute;
-    width:               100%;
-    background-color:    beige;
-    display:             flex;
-    align-items:         center;
-    justify-content:     space-between;
+    position:         absolute;
+    width:            100%;
+    background-color: #f8f8f8;
+    display:          flex;
+    align-items:      center;
 }
 
 #header .title{
-    text-transform:      uppercase;
-    text-align:          center;
-    font-size:           1.5em;
-    color:               #ccc;
-    display:             table;
+    flex:             1;
 }
 
-#header .title div{
-    display:             table-cell;
-    vertical-align:      middle;
+h1{
+    font-size:        1.5em;
+    margin:           0;
 }
 
 #header .icon{
-    padding:             20px;
+    padding:          20px;
 }
 
 #header .icon object{
-    width:               50px;
-    height:              50px;
-    display:             block;
+    width:            50px;
+    height:           50px;
+    display:          block;
 }
+
+/* SPLASH */
 
 #splash{
     height:              100vh;
@@ -45,6 +51,50 @@ body{
     background-position: center;
 }
 
-#main{
-    margin:              0 auto;
+/* HIGHLIGHTS */
+
+.section{
+    margin:           0 auto;
+    padding:          0 20px;
+    max-width:        1280px;
+}
+
+h2{
+    border-bottom:    2px solid #60252c;
+    padding:          .83em;
+}
+
+.hl{
+    display:          flex;
+    flex-wrap:        wrap;
+    justify-content:  space-around;
+}
+.hl > div{
+    flex: 0 1 360px;
+    margin-bottom:    20px;
+}
+
+.hl > div h3{
+    text-transform:   uppercase;
+}
+
+.poster{
+    background-color: #333;
+    padding-bottom:   1em;
+    font-size:        14pt;
+}
+
+:nth-child(2n+1) > .poster{
+    background-color: #f0f0f0;
+    color:            #888;
+}
+
+.poster img{
+    display:          block;
+    width:            100%;
+    margin-bottom:    20px;
+}
+
+.poster p{
+    margin:           .4em 20px;
 }
