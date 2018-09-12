@@ -115,7 +115,7 @@ h2{
 .bf > div{
     flex:             1 600px;
     margin:           40px;
-    max-width:        800px;
+    max-width:        100%;
 }
 
 .banner h3{
@@ -148,8 +148,10 @@ form input, form select{
     height:           40px;
     border:           none;
     color:            inherit;
-    margin:           10px 0;
-    font-size:        1.4em;
+    margin:           0 5px 20px;
+    font-size:        1.2em;
+    padding:          8px;
+    min-width:        0;
 }
 
 form .time{
@@ -159,7 +161,8 @@ form .time{
 
 form .time input{
     text-align:       center;
-    flex:             0 1 250px;
+    flex-grow:        1;
+    flex-shrink:      1;
 }
 
 form .time input:not(:last-child){
@@ -171,58 +174,61 @@ form select{
 }
 
 form input[type=submit]{
-    background-color: #60252c;
+    text-transform:   uppercase;
+    margin:           0 auto;
+}
+
+.banner form input[type=submit]{
     display:          block;
-    margin:           10px auto;
+    background-color: #60252c;
     color:            #ccc;
     width:            100%;
-    text-transform:   uppercase;
     max-width:        400px;
 }
 
 /* EVENTS */
 
 .ev{
-    margin-bottom:40px;
-    justify-content: space-between;
+    margin-bottom:    40px;
+    justify-content:  space-between;
 }
 
 .ev > div{
     background-color: #f0f0f0;
-    padding: 20px;
-    flex: 1 560px;
-    margin:15px;
+    padding:          20px;
+    flex:             1 560px;
+    margin:           15px;
 }
 
 .flexc{
     display:flex;
-    text-transform: uppercase;
-    justify-content: flex-end;
-    padding:10px;
+    text-transform:   uppercase;
+    justify-content:  flex-end;
+    padding:          10px;
 }
 
 .flexc:not(:last-child){
-    border-bottom:     2px solid white;
+    border-bottom:    2px solid white;
 }
 
 .flexc > div{
-    border-left:     2px dashed white;
-    flex: 0 1 240px;
-    padding: 0 10px;
+    border-left:      2px dashed white;
+    flex:             0 1 240px;
+    padding:          0 10px;
     
 }
 
 .evspecs{
-    display:table;
+    display:          table;
 }
 
 .evspecs > div{
-    display: table-row;
+    display:          table-row;
 }
 
 .evspecs > div > *{
-    display:table-cell;
-    vertical-align: middle;
+    display:          table-cell;
+    vertical-align:   middle;
 }
 
 .evspecs object{
@@ -245,4 +251,65 @@ form input[type=submit]{
 
 #footer{
     background-color: #333;
+    padding:          25px;
+    color:            #ccc;
+    font-size:        .9em;
+}
+
+#footer > div{
+    max-width:        1440px;
+    margin:           0 auto;
+}
+
+#footer > .flexs > div{
+    flex:             1 300px;
+}
+
+
+.flexs > .fbox{
+    flex:             1;
+}
+
+.fbox{
+    margin:           0 20px;
+}
+
+h4{
+    text-transform:   uppercase;
+}
+
+.fbox h4{
+    margin-bottom:    25px;
+}
+
+#footer form{
+    margin:           0 40px;
+}
+
+#footer form input[type=email]{
+    width:            100%;
+    color:            #888;
+}
+
+#footer form input[type=submit]{
+    margin-top:       25px;
+    border:           2px solid #ccc;
+    border-radius:    15px;
+    display:          table;
+    background-color: transparent;
+    padding:          5px 30px;
+}
+
+form h4{
+    text-align:       center;
+}
+
+#footer .last{
+    width:            100%;
+    margin-top:       60px;
+}
+
+#footer .last .fbox{
+    max-width:        920px;
+    margin:           0 auto;
 }
