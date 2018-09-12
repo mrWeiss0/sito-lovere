@@ -14,35 +14,6 @@ h1, h2, h3{
     font-weight:    normal;
 }
 
-/* HEADER */
-
-#header{
-    position:         absolute;
-    width:            100%;
-    background-color: #f8f8f8;
-    display:          flex;
-    align-items:      center;
-}
-
-#header .title{
-    flex:             1;
-}
-
-h1{
-    font-size:        1.5em;
-    margin:           0;
-}
-
-#header .icon{
-    padding:          20px;
-}
-
-#header .icon object{
-    width:            50px;
-    height:           50px;
-    display:          block;
-}
-
 /* SPLASH */
 
 #splash{
@@ -245,71 +216,4 @@ form input[type=submit]{
 
 .button > h3{
     padding:          0 1.5em;
-}
-
-/* FOOTER */
-
-#footer{
-    background-color: #333;
-    padding:          25px;
-    color:            #ccc;
-    font-size:        .9em;
-}
-
-#footer > div{
-    max-width:        1440px;
-    margin:           0 auto;
-}
-
-#footer > .flexs > div{
-    flex:             1 300px;
-}
-
-
-.flexs > .fbox{
-    flex:             1;
-}
-
-.fbox{
-    margin:           0 20px;
-}
-
-h4{
-    text-transform:   uppercase;
-}
-
-.fbox h4{
-    margin-bottom:    25px;
-}
-
-#footer form{
-    margin:           0 40px;
-}
-
-#footer form input[type=email]{
-    width:            100%;
-    color:            #888;
-}
-
-#footer form input[type=submit]{
-    margin-top:       25px;
-    border:           2px solid #ccc;
-    border-radius:    15px;
-    display:          table;
-    background-color: transparent;
-    padding:          5px 30px;
-}
-
-form h4{
-    text-align:       center;
-}
-
-#footer .last{
-    width:            100%;
-    margin-top:       60px;
-}
-
-#footer .last .fbox{
-    max-width:        920px;
-    margin:           0 auto;
 }
