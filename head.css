@@ -28,10 +28,17 @@ h1{
 
 /* MENU */
 
-.menu{
-    width:            100%;
+.ddown{
+    position:         relative;
+}
+
+.ddown .hide{
     position:         absolute;
-    top:              90px;
+}
+
+.menu{
+    width:            100vw;
+    top:              100%;
     left:             0;
     background-color: #f8f8f8;
     text-transform:   uppercase;
@@ -40,6 +47,7 @@ h1{
 
 .menu > div{
     display:          flex;
+    flex-wrap:        wrap;
     padding:          4px;
     margin:           0 auto;
     list-style:       none inside;
@@ -47,30 +55,73 @@ h1{
     justify-content:  right;
 }
 
-.menu a{
-    display:          block;
+.menu > div > *{
     flex:             1 auto;
+}
+
+.mitem, .menu a{
     padding:          10px 18px;
     margin:           4px;
     background-color: #60252c;
     color:            #f0f0f0;
     text-align:       center;
-    margin-right:     4px;
+}
+
+.menu a{
+    display:          block;
     text-decoration:  none;
 }
 
+.submenu{
+    background-color: #f8f8f8;
+    min-width:        100%;
+    right:            -4px;
+    padding:          0 4px;
+}
+
+.submenu a{
+    margin:       1px 4px;
+}
+
+.search{
+    top:              0;
+    right:            0;
+    padding:          20px;
+    margin-right:     70px;
+    background-color: #f8f8f8;
+}
+
+.search input{
+    margin:           0;
+    height:           34px;
+}
+
 /* MOBILE */
+
+@media screen and (max-width: 768px){
+    .menu > div{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-device-width: 768px){
     #header{
         position:       fixed;
     }
 
-    .ddown:not(:hover) .hide{
+    .ddown.m:not(:hover) .hide:not(:focus-within){
         display:        none;
     }
-    
-    .menu > div{
-        flex-direction: column;
+
+    .mitem.d{
+        display: none;
+    }
+}
+
+/* DESKTOP */
+
+@media not screen and (max-device-width: 768px){
+    .ddown.d:not(:hover) .hide:not(:focus-within){
+        display:        none;
     }
 }
