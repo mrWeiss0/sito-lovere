@@ -182,8 +182,52 @@ form input[type=submit]{
 
 /* EVENTS */
 
+.ev{
+    margin-bottom:40px;
+    justify-content: space-between;
+}
+
 .ev > div{
     background-color: #f0f0f0;
+    padding: 20px;
+    flex: 1 560px;
+    margin:15px;
+}
+
+.flexc{
+    display:flex;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    padding:10px;
+}
+
+.flexc:not(:last-child){
+    border-bottom:     2px solid white;
+}
+
+.flexc > div{
+    border-left:     2px dashed white;
+    flex: 0 1 240px;
+    padding: 0 10px;
+    
+}
+
+.evspecs{
+    display:table;
+}
+
+.evspecs > div{
+    display: table-row;
+}
+
+.evspecs > div > *{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.evspecs object{
+    width:            25px;
+    height:           25px;
 }
 
 .button{
