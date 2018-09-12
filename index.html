@@ -11,7 +11,7 @@
     <body>
         <div id="header">
             <div class="ddown m">
-                <div class="icon">
+                <div class="icon m">
                     <object data="icons/menu.svg"></object>
                     <div class="menu hide">
                         <div>
@@ -39,7 +39,7 @@
                     <object data="icons/search.svg"></object>
                     <div class="search hide">
                         <form>
-                            <input>
+                            <input placeholder="Cerca...">
                         </form>
                     </div>
                 </div>
@@ -115,19 +115,19 @@
                                 placeholder="Dalle">
                             <input type="number" min="0" max="23"
                                 placeholder="Alle">
+                            <select name="place">
+                                <option value="lovere">Lovere</option>
+                            </select>
+                            <select name="wday">
+                                <option value="mon">Lunedì</option>
+                                <option value="tue">Martedì</option>
+                                <option value="wed">Mercoledì</option>
+                                <option value="thu">Giovedì</option>
+                                <option value="fri">Venerdì</option>
+                                <option value="sat">Sabato</option>
+                                <option value="sun">Domenica</option>
+                            </select>
                         </div>
-                        <select name="place">
-                            <option value="lovere">Lovere</option>
-                        </select>
-                        <select name="wday">
-                            <option value="mon">Lunedì</option>
-                            <option value="tue">Martedì</option>
-                            <option value="wed">Mercoledì</option>
-                            <option value="thu">Giovedì</option>
-                            <option value="fri">Venerdì</option>
-                            <option value="sat">Sabato</option>
-                            <option value="sun">Domenica</option>
-                        </select>
                         <input type="submit" value="Cerca">
                     </form>
                 </div>
@@ -286,13 +286,11 @@
                 </div>
             </div>
             <div class="last">
-                <div class="fbox">
-                    <h4>Comunità parrocchiale di Lovere</h4>
-                    Mauris pharetra non diam eu volutpat.<br>
-                    Sed tortor libero, ullamcorper quis diam a, euismod cursus quam.<br>
-                    Duis et volutpat magna. Phasellus consequat ut justo a convallis.<br>
-                    Cras et magna id elit mollis ullamcorper eget nec ipsum.
-                </div>
+                <h4>Comunità parrocchiale di Lovere</h4>
+                Mauris pharetra non diam eu volutpat.<br>
+                Sed tortor libero, ullamcorper quis diam a, euismod cursus quam.<br>
+                Duis et volutpat magna. Phasellus consequat ut justo a convallis.<br>
+                Cras et magna id elit mollis ullamcorper eget nec ipsum.
             </div>
         </div>
     </body>

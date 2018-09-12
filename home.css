@@ -99,6 +99,20 @@ li.sec{
     list-style-type:  circle;
 }
 
+.time{
+    display:          flex;
+    justify-content:  space-between;
+    flex-wrap:        wrap;
+}
+
+.time input{
+    text-align:       center;
+    flex-grow:        1;
+    flex-shrink:      1;
+}
+.time input:first-child{
+    margin-right:     40px;
+}
 .banner form input[type=submit]{
     display:          block;
     background-color: #60252c;

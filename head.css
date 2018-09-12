@@ -40,8 +40,7 @@ h1{
     width:            100vw;
     top:              100%;
     left:             0;
-    background-color: #f8f8f8;
-    text-transform:   uppercase;
+    background-color: #60252c;
     justify-content:  center;
 }
 
@@ -63,8 +62,13 @@ h1{
     padding:          10px 18px;
     margin:           4px;
     background-color: #60252c;
-    color:            #f0f0f0;
+    color:            #f8f8f8;
     text-align:       center;
+    border:           1px solid #f8f8f8;
+}
+
+.mitem{
+    user-select:      none;
 }
 
 .menu a{
@@ -73,14 +77,12 @@ h1{
 }
 
 .submenu{
-    background-color: #f8f8f8;
+    background-color: #60252c;
     min-width:        100%;
     right:            -4px;
-    padding:          0 4px;
-}
-
-.submenu a{
-    margin:       1px 4px;
+    padding:          0 4px 4px;
+    display:          flex;
+    flex-direction:   column;
 }
 
 .search{
@@ -114,7 +116,7 @@ h1{
     }
 
     .mitem.d{
-        display: none;
+        display:        none;
     }
 }
 
@@ -123,5 +125,13 @@ h1{
 @media not screen and (max-device-width: 768px){
     .ddown.d:not(:hover) .hide:not(:focus-within){
         display:        none;
+    }
+    
+    .icon.m object{
+        visibility:     hidden;
+    }
+
+    .submenu a{
+        margin:         -1px 4px;
     }
 }
