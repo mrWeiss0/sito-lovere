@@ -54,6 +54,29 @@ figure img{
     column-gap: 40px;
 }
 
+.desc.list{    
+    max-width: 580px;
+}
+
+.desc.list > div{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 10px;
+    border: 1px solid #888;
+    background-color: #f0f0f0;
+}
+
+.desc.list > div > div{
+    flex: 1;
+    margin: 20px;
+}
+
+.desc.list > div > div:first-child{
+    text-align: right;
+    font-weight: bold;
+}
+
 .desc.flexs > *{
     flex: 1 360px;
     margin: 20px 40px;
@@ -79,6 +102,12 @@ h1.b{
 
 .cgallery figure{
     flex: 1 240px;
+}
+
+.cgallery figcaption{
+    font-size:       1.4em;
+    padding:         1em 0;
+    text-align:      center;
 }
 
 @media screen and (max-width: 768px){
