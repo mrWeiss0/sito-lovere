@@ -23,6 +23,7 @@
     max-width:       1440px;
     margin:          25px auto;
     padding:         0 20px;
+    align-items:     center;
 }
 
 .gall.r{
@@ -30,12 +31,14 @@
 }
 
 .gall img{
-    width:           100%;
+    max-width:       100%;
+    max-height:      240px;
 }
 
 .gall figure{
     flex:            0 1 400px;
     margin:          20px 40px;
+    text-align:      center;
 }
 
 .gall.s figure{
@@ -45,4 +48,5 @@
 .gall figcaption{
     font-size:       1.6em;
     padding:         10px 0;
+    text-align:      initial;
 }
