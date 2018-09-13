@@ -12,9 +12,10 @@
     flex:             1;
 }
 
-h1{
+#header h1{
     font-size:        1.4em;
     margin:           0;
+    color:            #888;
 }
 
 #header .icon{
