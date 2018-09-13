@@ -1,5 +1,6 @@
 #header{
     position:         absolute;
+    top:              0;
     width:            100%;
     background-color: #f8f8f8;
     display:          flex;
@@ -28,7 +29,7 @@ h1{
 
 /* MENU */
 
-.ddown{
+.ddown:not(.nr){
     position:         relative;
 }
 
@@ -37,7 +38,7 @@ h1{
 }
 
 .menu{
-    width:            100vw;
+    width:            100%;
     top:              100%;
     left:             0;
     background-color: #60252c;
@@ -64,7 +65,7 @@ h1{
     background-color: #60252c;
     color:            #f8f8f8;
     text-align:       center;
-    border:           1px solid #f8f8f8;
+    border:           1px solid transparent;
 }
 
 .mitem{
@@ -74,6 +75,11 @@ h1{
 .menu a{
     display:          block;
     text-decoration:  none;
+}
+
+.menu a:hover, .menu .ddown:hover .mitem{
+    border-color:     #f8f8f8;
+    z-index: 1;
 }
 
 .submenu{
@@ -98,17 +104,15 @@ h1{
     height:           34px;
 }
 
+.wrap{
+    margin:           145px 0 0;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 768px){
     .menu > div{
         flex-direction: column;
-    }
-}
-
-@media screen and (max-device-width: 768px){
-    #header{
-        position:       fixed;
     }
 
     .ddown.m:not(:hover) .hide:not(:focus-within){
@@ -118,20 +122,30 @@ h1{
     .mitem.d{
         display:        none;
     }
+
+    .wrap{
+        margin:         90px 0 0;
+    }
+}
+
+@media screen and (max-device-width: 768px){
+    #header{
+        position:       fixed;
+    }
 }
 
 /* DESKTOP */
 
-@media not screen and (max-device-width: 768px){
+@media not screen and (max-width: 768px){
     .ddown.d:not(:hover) .hide:not(:focus-within){
         display:        none;
-    }
-    
-    .icon.m object{
-        visibility:     hidden;
     }
 
     .submenu a{
         margin:         -1px 4px;
+    }
+    
+    .icon.m object{
+        visibility:     hidden;
     }
 }

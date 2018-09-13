@@ -3,7 +3,6 @@ body{
     height:         100%;
     margin:         0;
     color:          #888;
-    position:       relative;
 }
 
 h1, h2{
@@ -13,6 +12,11 @@ h1, h2{
 h1, h2, h3{
     text-transform: uppercase;
     font-weight:    normal;
+}
+
+h2{
+    border-bottom:    2px solid #60252c;
+    padding:          .83em;
 }
 
 form input, form select{
@@ -37,4 +41,10 @@ form input[type=submit]{
 
 form h4{
     text-align:       center;
+}
+
+.flexs{
+    display:          flex;
+    flex-wrap:        wrap;
+    justify-content:  space-around;
 }

@@ -1,0 +1,29 @@
+.wrap{
+    padding-top: 50px;
+}
+
+.huge{
+    font-size: 4pc;
+    max-width: 1440px;
+    margin: 25px auto;
+    padding: 0 40px;
+    color: #60252c;
+    text-transform: uppercase;
+}
+
+.gall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 25px auto; 
+}
+
+.gall img{
+    width: 100%;
+}
+
+.gall figure{
+    flex: 0 1 400px;
+    margin: 40px 30px;
+}

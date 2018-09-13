@@ -1,0 +1,38 @@
+.wrap{
+    padding-top: 50px;
+}
+
+.tit{
+    margin: 40px 30px;
+    flex: 1;
+}
+
+.huge{
+    font-size: 4pc;
+    text-transform: uppercase;
+}
+
+.gall{
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 1440px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.gall img{
+    width: 100%;
+    background-color: #60252c;
+}
+
+.gall figure{
+    flex: 0 1 240px;
+    margin: 40px 30px;
+}
+
+.gall figcaption{
+    font-size: 1.6em;
+    padding: 10px 0;
+}
