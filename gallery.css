@@ -11,8 +11,9 @@
 }
 
 .huge{
-    font-size:      4pc;
-    text-transform: uppercase;
+    font-size:       4pc;
+    text-transform:  uppercase;
+    font-family:     Bebas;
 }
 
 .gall{
@@ -49,4 +50,5 @@
     font-size:       1.6em;
     padding:         10px 0;
     text-align:      initial;
+    font-family:     Bebas;
 }
