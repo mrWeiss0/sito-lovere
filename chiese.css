@@ -45,6 +45,7 @@
 }
 
 .desc{
+    max-width: 960px;
     columns: 2 360px;
     column-gap: 40px;
     text-align: justify;
