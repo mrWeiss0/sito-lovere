@@ -46,9 +46,17 @@ figure img{
 
 .desc{
     max-width: 960px;
+    text-align: justify;
+}
+
+.cols{
     columns: 2 360px;
     column-gap: 40px;
-    text-align: justify;
+}
+
+.desc.flexs > *{
+    flex: 1 360px;
+    margin: 20px 40px;
 }
 
 h1.g{
