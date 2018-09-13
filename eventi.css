@@ -1,6 +1,8 @@
 .ev{
     margin-bottom:    40px;
     justify-content:  space-between;
+    padding:          0 40px;
+    justify-content:  center;
 }
 
 .ev > div{
@@ -8,6 +10,7 @@
     padding:          20px;
     flex:             1 560px;
     margin:           15px;
+    max-width:        960px;
 }
 
 .flexc{
