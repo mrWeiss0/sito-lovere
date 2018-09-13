@@ -1,0 +1,48 @@
+.titinside{
+    margin:          40px 30px;
+    flex:            1;
+}
+
+.titabove{
+    max-width:       1440px;
+    margin:          25px auto;
+    padding:         0 40px;
+    color:           #60252c;
+}
+
+.huge{
+    font-size:      4pc;
+    text-transform: uppercase;
+}
+
+.gall{
+    color:           #333;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-evenly;
+    max-width:       1440px;
+    margin:          25px auto;
+    padding:         0 20px;
+}
+
+.gall.r{
+    justify-content: flex-end;
+}
+
+.gall img{
+    width:           100%;
+}
+
+.gall figure{
+    flex:            0 1 400px;
+    margin:          20px 40px;
+}
+
+.gall.s figure{
+    flex-basis:      240px;
+}
+
+.gall figcaption{
+    font-size:       1.6em;
+    padding:         10px 0;
+}
